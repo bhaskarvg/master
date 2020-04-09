@@ -119,7 +119,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "usp_write_watermark",
+					"storedProcedureName": "[dbo].[usp_write_watermark]",
 					"storedProcedureParameters": {
 						"LastModifiedtime": {
 							"value": {
@@ -136,6 +136,10 @@
 							"type": "String"
 						}
 					}
+				},
+				"linkedServiceName": {
+					"referenceName": "SourceLS",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],
