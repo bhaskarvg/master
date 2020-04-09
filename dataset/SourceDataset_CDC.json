@@ -1,0 +1,14 @@
+{
+	"name": "SourceDataset_CDC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SourceLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"typeProperties": {
+			"tableName": "datasource_table"
+		}
+	}
+}
