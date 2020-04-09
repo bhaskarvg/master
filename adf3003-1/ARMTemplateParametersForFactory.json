@@ -34,6 +34,12 @@
 		},
 		"SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
 			"value": ""
+		},
+		"SinkDataset_CDC_properties_typeProperties_fileName": {
+			"value": "@CONCAT('Incremental-', pipeline().RunId, '.txt')"
+		},
+		"SinkDataset_CDC_properties_typeProperties_folderPath": {
+			"value": "adftutorial/incchgtracking"
 		}
 	}
 }
