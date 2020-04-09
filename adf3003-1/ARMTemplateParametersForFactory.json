@@ -17,6 +17,12 @@
 		"SqlOnPrem_password": {
 			"value": ""
 		},
+		"SinkDataset_properties_typeProperties_fileName": {
+			"value": "@CONCAT('Incremental-', pipeline().RunId, '.txt')"
+		},
+		"SinkDataset_properties_typeProperties_folderPath": {
+			"value": "sampledata/incrementalcopy"
+		},
 		"SqlOnPrem_properties_typeProperties_userName": {
 			"value": "fareast\\bhvg"
 		},

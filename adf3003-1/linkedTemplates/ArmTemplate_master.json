@@ -23,6 +23,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlOnPrem'"
 		},
+		"SinkDataset_properties_typeProperties_fileName": {
+			"type": "string",
+			"defaultValue": "@CONCAT('Incremental-', pipeline().RunId, '.txt')"
+		},
+		"SinkDataset_properties_typeProperties_folderPath": {
+			"type": "string",
+			"defaultValue": "sampledata/incrementalcopy"
+		},
 		"SqlOnPrem_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "fareast\\bhvg"
@@ -85,6 +93,12 @@
 					},
 					"SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
 						"value": "[parameters('SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword')]"
+					},
+					"SinkDataset_properties_typeProperties_fileName": {
+						"value": "[parameters('SinkDataset_properties_typeProperties_fileName')]"
+					},
+					"SinkDataset_properties_typeProperties_folderPath": {
+						"value": "[parameters('SinkDataset_properties_typeProperties_folderPath')]"
 					},
 					"SqlOnPrem_properties_typeProperties_userName": {
 						"value": "[parameters('SqlOnPrem_properties_typeProperties_userName')]"
