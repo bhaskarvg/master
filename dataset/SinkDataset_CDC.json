@@ -16,7 +16,7 @@
 				"value": "@CONCAT('Incremental-', pipeline().RunId, '.txt')",
 				"type": "Expression"
 			},
-			"folderPath": "adftutorial/incchgtracking"
+			"folderPath": "sampledata/incchgtracking"
 		}
 	}
 }
