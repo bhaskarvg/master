@@ -19,6 +19,15 @@
 		},
 		"SqlOnPrem_properties_typeProperties_userName": {
 			"value": "fareast\\bhvg"
+		},
+		"SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "serv3003.database.windows.net"
+		},
+		"SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "CloudAdmin"
+		},
+		"SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"value": ""
 		}
 	}
 }
