@@ -26,7 +26,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "datasource_table"
+			"table": "data_source_table"
 		}
 	}
 }
