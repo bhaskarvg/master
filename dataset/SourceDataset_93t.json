@@ -78,8 +78,8 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "SalesLT",
-			"table": "Product"
+			"schema": "dbo",
+			"table": "AWSales"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"

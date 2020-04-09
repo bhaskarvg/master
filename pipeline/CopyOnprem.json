@@ -1,0 +1,78 @@
+{
+	"name": "CopyOnprem",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00"
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "CustomerID",
+									"type": "Int16"
+								},
+								"sink": {
+									"name": "CustomerID",
+									"type": "Int16"
+								}
+							},
+							{
+								"source": {
+									"name": "BikeBuyer",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "BikeBuyer",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "AvgMonthSpend",
+									"type": "Double"
+								},
+								"sink": {
+									"name": "AvgMonthSpend",
+									"type": "Double"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "AWSales",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SourceDataset_93t",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
